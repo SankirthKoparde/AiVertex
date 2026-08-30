@@ -48,7 +48,7 @@ const Hero = () => {
     <section
       id="home"
       ref={containerRef}
-      className="relative w-full min-h-screen h-screen flex flex-col justify-center overflow-hidden bg-[#04060C] pt-20"
+      className="relative w-full min-h-screen lg:h-screen flex flex-col justify-center overflow-hidden bg-[#04060C] pt-28 pb-16 lg:py-0"
     >
       {/* Background Video - 100% Vivid Brightness */}
       <video
@@ -70,19 +70,19 @@ const Hero = () => {
 
       {/* Main Hero Content Container */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Left Column: Headline & Action Buttons */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="lg:col-span-7 flex flex-col justify-center text-left">
             
             {/* Main Headline - Bold, Dynamic Word Rotator (< 10 Chars) */}
             <h1
-              className={`text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] transition-all duration-700 delay-150 ${
+              className={`text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] transition-all duration-700 delay-150 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
               <div>LEARN WITH AI.</div>
-              <div className="whitespace-nowrap">
+              <div className="whitespace-normal sm:whitespace-nowrap">
                 BUILD THE{' '}
                 <span
                   className={`inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 transition-all duration-300 transform ${
@@ -96,7 +96,7 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className={`text-lg sm:text-xl text-slate-200 max-w-2xl font-normal leading-relaxed mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)] transition-all duration-700 delay-300 ${
+              className={`text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl font-normal leading-relaxed mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)] transition-all duration-700 delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
@@ -131,7 +131,7 @@ const Hero = () => {
 
           {/* Right Column: 3D Interactive AI Robot Avatar */}
           <div
-            className={`lg:col-span-5 flex justify-center items-center lg:-mt-10 lg:-translate-y-6 transition-all duration-700 delay-600 ${
+            className={`lg:col-span-5 flex justify-center items-center mt-8 lg:mt-0 lg:-mt-10 lg:-translate-y-6 transition-all duration-700 delay-600 ${
               isLoaded ? 'opacity-100' : 'opacity-0 translate-y-8'
             }`}
           >

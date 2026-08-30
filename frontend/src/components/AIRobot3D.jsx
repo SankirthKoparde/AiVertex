@@ -175,7 +175,7 @@ const AIRobot3D = () => {
 
       {/* Interactive 3D AI Robot Cyber Head */}
       <div
-        className="relative w-76 h-88 sm:w-84 sm:h-[415px] transition-transform duration-200 ease-out flex flex-col items-center justify-center group-hover:scale-[1.02]"
+        className="relative w-[250px] h-[290px] min-[360px]:w-[280px] min-[360px]:h-[325px] min-[400px]:w-[300px] min-[400px]:h-[350px] sm:w-[336px] sm:h-[415px] transition-transform duration-200 ease-out flex flex-col items-center justify-center group-hover:scale-[1.02]"
         style={{
           transform: `perspective(1000px) rotateY(${rotY}deg) rotateX(${rotX}deg)`,
           transformStyle: 'preserve-3d',
@@ -183,11 +183,11 @@ const AIRobot3D = () => {
       >
         {/* Top Antenna Beacon Node */}
         <div className="relative flex flex-col items-center mb-[-8px] z-20">
-          <div className={`w-5 h-5 rounded-full ${isListening ? 'bg-yellow-400 shadow-[0_0_25px_#facc15]' : isProcessing ? 'bg-purple-400 shadow-[0_0_25px_#c084fc]' : 'bg-cyan-400 shadow-[0_0_25px_#38bdf8]'} ${isSpeaking || isListening || isProcessing ? 'animate-ping duration-300' : 'animate-ping'} absolute`} />
-          <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-300 to-white shadow-[0_0_20px_#38bdf8] border-2 border-white relative flex items-center justify-center">
-            <div className="w-2 h-2 rounded-full bg-purple-950" />
+          <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${isListening ? 'bg-yellow-400 shadow-[0_0_25px_#facc15]' : isProcessing ? 'bg-purple-400 shadow-[0_0_25px_#c084fc]' : 'bg-cyan-400 shadow-[0_0_25px_#38bdf8]'} ${isSpeaking || isListening || isProcessing ? 'animate-ping duration-300' : 'animate-ping'} absolute`} />
+          <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-300 to-white shadow-[0_0_20px_#38bdf8] border-2 border-white relative flex items-center justify-center">
+            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-purple-950" />
           </div>
-          <div className="w-2 h-10 bg-gradient-to-b from-cyan-400 via-purple-600 to-slate-900 rounded-t-full shadow-[0_0_12px_rgba(56,189,248,0.6)]" />
+          <div className="w-1.5 h-8 sm:w-2 sm:h-10 bg-gradient-to-b from-cyan-400 via-purple-600 to-slate-900 rounded-t-full shadow-[0_0_12px_rgba(56,189,248,0.6)]" />
         </div>
 
         {/* Side Ear Cyber Modules */}
@@ -203,34 +203,34 @@ const AIRobot3D = () => {
         </div>
 
         {/* Main Robot Helmet Shell */}
-        <div className="relative w-full h-full bg-gradient-to-b from-[#161B26]/95 via-[#0D101A]/95 to-[#04060B]/98 rounded-[52px] border-2 border-purple-500/40 p-6 shadow-[0_25px_65px_rgba(0,0,0,0.95),inset_0_2px_30px_rgba(168,85,247,0.3)] backdrop-blur-2xl flex flex-col items-center justify-between overflow-hidden">
+        <div className="relative w-full h-full bg-gradient-to-b from-[#161B26]/95 via-[#0D101A]/95 to-[#04060B]/98 rounded-[40px] sm:rounded-[52px] border-2 border-purple-500/40 p-4 sm:p-6 shadow-[0_25px_65px_rgba(0,0,0,0.95),inset_0_2px_30px_rgba(168,85,247,0.3)] backdrop-blur-2xl flex flex-col items-center justify-between overflow-hidden">
           
           {/* Vertical Neon Accent Strips */}
           <div className="absolute top-10 left-3.5 w-1 h-44 bg-gradient-to-b from-cyan-400 via-purple-500 to-transparent rounded-full shadow-[0_0_15px_#38bdf8] opacity-90" />
           <div className="absolute top-10 right-3.5 w-1 h-44 bg-gradient-to-b from-cyan-400 via-purple-500 to-transparent rounded-full shadow-[0_0_15px_#38bdf8] opacity-90" />
 
           {/* Top Cyber Branding Bar */}
-          <div className="w-full flex items-center justify-between px-4 py-2 bg-gradient-to-r from-purple-950/60 via-slate-900/80 to-purple-950/60 rounded-full border border-purple-500/30 text-xs font-mono text-cyan-200 shadow-inner">
-            <span className="flex items-center gap-2 font-bold tracking-wider">
-              <Brain className="w-4 h-4 text-cyan-400 animate-pulse" /> VARTEX-NEURAL
+          <div className="w-full flex items-center justify-between px-2.5 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-purple-950/60 via-slate-900/80 to-purple-950/60 rounded-full border border-purple-500/30 text-[10px] sm:text-xs font-mono text-cyan-200 shadow-inner">
+            <span className="flex items-center gap-1.5 sm:gap-2 font-bold tracking-wider">
+              <Brain className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-400 animate-pulse" /> VARTEX-NEURAL
             </span>
             <div className="flex items-center gap-1.5">
-              <span className="text-[10px] text-purple-300 font-semibold font-mono">
+              <span className="text-[9px] sm:text-[10px] text-purple-300 font-semibold font-mono">
                 {isListening ? 'LISTENING...' : isProcessing ? 'THINKING...' : isSpeaking ? 'SPEAKING...' : 'TAP TO SPEAK'}
               </span>
-              <span className={`inline-block w-2.5 h-2.5 rounded-full ${isListening ? 'bg-yellow-400 animate-ping' : isProcessing ? 'bg-purple-400 animate-ping' : isSpeaking ? 'bg-emerald-400 animate-ping' : 'bg-cyan-400 animate-pulse'} shadow-[0_0_10px_#38bdf8]`} />
+              <span className={`inline-block w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full ${isListening ? 'bg-yellow-400 animate-ping' : isProcessing ? 'bg-purple-400 animate-ping' : isSpeaking ? 'bg-emerald-400 animate-ping' : 'bg-cyan-400 animate-pulse'} shadow-[0_0_10px_#38bdf8]`} />
             </div>
           </div>
 
           {/* Curved High-Tech Cyber Visor */}
-          <div className={`relative w-full h-42 bg-gradient-to-b from-black via-[#040814] to-[#0A0716] rounded-3xl border-2 transition-colors duration-300 ${isListening ? 'border-yellow-400 shadow-[0_0_30px_rgba(250,204,21,0.5)]' : isProcessing ? 'border-purple-400 shadow-[0_0_30px_rgba(168,85,247,0.5)]' : isSpeaking ? 'border-cyan-300 shadow-[0_0_30px_rgba(56,189,248,0.5)]' : 'border-cyan-400/40 shadow-[inset_0_0_40px_rgba(56,189,248,0.25)]'} p-3 flex flex-col items-center justify-center overflow-hidden`}>
+          <div className={`relative w-full h-32 sm:h-42 bg-gradient-to-b from-black via-[#040814] to-[#0A0716] rounded-3xl border-2 transition-colors duration-300 ${isListening ? 'border-yellow-400 shadow-[0_0_30px_rgba(250,204,21,0.5)]' : isProcessing ? 'border-purple-400 shadow-[0_0_30px_rgba(168,85,247,0.5)]' : isSpeaking ? 'border-cyan-300 shadow-[0_0_30px_rgba(56,189,248,0.5)]' : 'border-cyan-400/40 shadow-[inset_0_0_40px_rgba(56,189,248,0.25)]'} p-3 flex flex-col items-center justify-center overflow-hidden`}>
             
             {/* Visor HUD Indicators */}
-            <div className="absolute top-2 left-3 text-[9px] font-mono text-cyan-300/70 flex items-center gap-1">
-              <Activity className="w-3 h-3 text-cyan-400 animate-pulse" /> {isListening ? 'MIC.LISTENING' : isProcessing ? 'NEURAL.PROCESSING' : isSpeaking ? 'VOICE.SPEAKING' : 'SYSTEM.READY'}
+            <div className="absolute top-2 left-3 text-[8px] sm:text-[9px] font-mono text-cyan-300/70 flex items-center gap-1">
+              <Activity className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-cyan-400 animate-pulse" /> {isListening ? 'MIC.LISTENING' : isProcessing ? 'NEURAL.PROCESSING' : isSpeaking ? 'VOICE.SPEAKING' : 'SYSTEM.READY'}
             </div>
-            <div className="absolute top-2 right-3 text-[9px] font-mono text-purple-300/70 flex items-center gap-1">
-              {isListening ? <Mic className="w-3 h-3 text-yellow-400 animate-pulse" /> : <MicOff className="w-3 h-3 text-slate-500" />}
+            <div className="absolute top-2 right-3 text-[8px] sm:text-[9px] font-mono text-purple-300/70 hidden min-[360px]:flex items-center gap-1">
+              {isListening ? <Mic className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-yellow-400 animate-pulse" /> : <MicOff className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-500" />}
               [ AI VOICE ENGINE ]
             </div>
 
@@ -240,27 +240,27 @@ const AIRobot3D = () => {
 
             {/* Glowing Lenses Container */}
             <div
-              className="relative flex items-center justify-center gap-12 transition-transform duration-100 ease-out z-10"
+              className="relative flex items-center justify-center gap-6 sm:gap-12 transition-transform duration-100 ease-out z-10"
               style={{
                 transform: `translate(${eyeX}px, ${eyeY}px)`,
               }}
             >
               {/* Left Eye Lens Unit */}
               <div className="relative flex items-center justify-center">
-                <div className={`w-14 h-14 rounded-full bg-gradient-to-br ${isListening ? 'from-yellow-300 via-amber-500 to-orange-600' : isProcessing ? 'from-purple-400 via-indigo-500 to-fuchsia-600' : 'from-cyan-300 via-blue-500 to-purple-600'} p-1 ${isSpeaking || isListening || isProcessing ? 'shadow-[0_0_45px_#38bdf8] scale-105' : 'shadow-[0_0_35px_rgba(56,189,248,0.9)]'} transition-all flex items-center justify-center`}>
-                  <div className="w-11 h-11 rounded-full bg-black border-2 border-cyan-300/80 flex items-center justify-center relative shadow-inner">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-white via-cyan-200 to-sky-400 shadow-[0_0_15px_#38bdf8]" />
-                    <div className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-white shadow-[0_0_6px_#fff]" />
+                <div className={`w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br ${isListening ? 'from-yellow-300 via-amber-500 to-orange-600' : isProcessing ? 'from-purple-400 via-indigo-500 to-fuchsia-600' : 'from-cyan-300 via-blue-500 to-purple-600'} p-1 ${isSpeaking || isListening || isProcessing ? 'shadow-[0_0_45px_#38bdf8] scale-105' : 'shadow-[0_0_35px_rgba(56,189,248,0.9)]'} transition-all flex items-center justify-center`}>
+                  <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-black border-2 border-cyan-300/80 flex items-center justify-center relative shadow-inner">
+                    <div className="w-3.5 h-3.5 sm:w-5 sm:h-5 rounded-full bg-gradient-to-tr from-white via-cyan-200 to-sky-400 shadow-[0_0_15px_#38bdf8]" />
+                    <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:top-1.5 sm:right-1.5 sm:w-2 sm:h-2 rounded-full bg-white shadow-[0_0_6px_#fff]" />
                   </div>
                 </div>
               </div>
 
               {/* Right Eye Lens Unit */}
               <div className="relative flex items-center justify-center">
-                <div className={`w-14 h-14 rounded-full bg-gradient-to-br ${isListening ? 'from-yellow-300 via-amber-500 to-orange-600' : isProcessing ? 'from-purple-400 via-indigo-500 to-fuchsia-600' : 'from-cyan-300 via-blue-500 to-purple-600'} p-1 ${isSpeaking || isListening || isProcessing ? 'shadow-[0_0_45px_#38bdf8] scale-105' : 'shadow-[0_0_35px_rgba(56,189,248,0.9)]'} transition-all flex items-center justify-center`}>
-                  <div className="w-11 h-11 rounded-full bg-black border-2 border-cyan-300/80 flex items-center justify-center relative shadow-inner">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-white via-cyan-200 to-sky-400 shadow-[0_0_15px_#38bdf8]" />
-                    <div className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-white shadow-[0_0_6px_#fff]" />
+                <div className={`w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br ${isListening ? 'from-yellow-300 via-amber-500 to-orange-600' : isProcessing ? 'from-purple-400 via-indigo-500 to-fuchsia-600' : 'from-cyan-300 via-blue-500 to-purple-600'} p-1 ${isSpeaking || isListening || isProcessing ? 'shadow-[0_0_45px_#38bdf8] scale-105' : 'shadow-[0_0_35px_rgba(56,189,248,0.9)]'} transition-all flex items-center justify-center`}>
+                  <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-black border-2 border-cyan-300/80 flex items-center justify-center relative shadow-inner">
+                    <div className="w-3.5 h-3.5 sm:w-5 sm:h-5 rounded-full bg-gradient-to-tr from-white via-cyan-200 to-sky-400 shadow-[0_0_15px_#38bdf8]" />
+                    <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:top-1.5 sm:right-1.5 sm:w-2 sm:h-2 rounded-full bg-white shadow-[0_0_6px_#fff]" />
                   </div>
                 </div>
               </div>
@@ -268,11 +268,11 @@ const AIRobot3D = () => {
           </div>
 
           {/* Lower Speaker Grille & Active Sound Visualizer */}
-          <div className={`w-[88%] h-8 flex items-center justify-center gap-2 bg-black/90 rounded-2xl border ${isListening ? 'border-yellow-400 shadow-[0_0_20px_rgba(250,204,21,0.4)]' : isProcessing ? 'border-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.4)]' : isSpeaking ? 'border-cyan-400 shadow-[0_0_20px_rgba(56,189,248,0.4)]' : 'border-purple-500/30'} px-4 shadow-inner transition-all`}>
+          <div className={`w-[88%] h-6 sm:h-8 flex items-center justify-center gap-1.5 sm:gap-2 bg-black/90 rounded-2xl border ${isListening ? 'border-yellow-400 shadow-[0_0_20px_rgba(250,204,21,0.4)]' : isProcessing ? 'border-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.4)]' : isSpeaking ? 'border-cyan-400 shadow-[0_0_20px_rgba(56,189,248,0.4)]' : 'border-purple-500/30'} px-4 shadow-inner transition-all`}>
             {[45, 85, 100, 70, 95, 65, 90, 55, 85].map((height, i) => (
               <div
                 key={i}
-                className={`w-1.5 rounded-full transition-all ${
+                className={`w-1 sm:w-1.5 rounded-full transition-all ${
                   isListening
                     ? 'bg-gradient-to-t from-yellow-500 via-amber-300 to-white animate-bounce'
                     : isProcessing
@@ -290,8 +290,8 @@ const AIRobot3D = () => {
           </div>
 
           {/* Metallic Cyber Neck Base */}
-          <div className="w-32 h-5 bg-gradient-to-r from-purple-950 via-slate-800 to-purple-950 rounded-b-2xl border-t-2 border-cyan-400/40 flex items-center justify-center shadow-lg">
-            <div className="w-20 h-1.5 bg-cyan-400/60 rounded-full shadow-[0_0_8px_#38bdf8]" />
+          <div className="w-24 sm:w-32 h-4 sm:h-5 bg-gradient-to-r from-purple-950 via-slate-800 to-purple-950 rounded-b-2xl border-t-2 border-cyan-400/40 flex items-center justify-center shadow-lg">
+            <div className="w-14 sm:w-20 h-1 sm:h-1.5 bg-cyan-400/60 rounded-full shadow-[0_0_8px_#38bdf8]" />
           </div>
         </div>
       </div>
