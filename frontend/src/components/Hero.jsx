@@ -85,7 +85,7 @@ const Hero = () => {
               <div className="whitespace-normal sm:whitespace-nowrap">
                 BUILD THE{' '}
                 <span
-                  className={`inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 transition-all duration-300 transform ${
+                  className={`inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 transition-all duration-300 transform ${
                     isFade ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-2 scale-95'
                   }`}
                 >
@@ -112,7 +112,7 @@ const Hero = () => {
               {/* Primary CTA */}
               <a
                 href="#courses"
-                className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white transition-all duration-300 ease-in-out rounded-xl bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-xl shadow-purple-600/30 hover:shadow-purple-500/50 hover:scale-[1.02] active:scale-[0.98] border border-purple-400/40"
+                className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white transition-all duration-300 ease-in-out rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-500 shadow-xl shadow-cyan-500/30 hover:shadow-cyan-400/50 hover:scale-[1.02] active:scale-[0.98] border border-cyan-400/40"
               >
                 <span>Explore Courses</span>
                 <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" />
@@ -121,9 +121,9 @@ const Hero = () => {
               {/* Secondary CTA */}
               <a
                 href="#learn-with-ai"
-                className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-slate-200 hover:text-white transition-all duration-300 ease-in-out rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/15 hover:border-purple-400/50 shadow-lg hover:scale-[1.02] active:scale-[0.98]"
+                className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-slate-200 hover:text-white transition-all duration-300 ease-in-out rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/15 hover:border-cyan-400/50 shadow-lg hover:scale-[1.02] active:scale-[0.98]"
               >
-                <Play className="w-4 h-4 mr-2.5 text-purple-400 group-hover:text-purple-300 transition-colors fill-purple-400/30" />
+                <Play className="w-4 h-4 mr-2.5 text-cyan-400 group-hover:text-cyan-300 transition-colors fill-cyan-400/30" />
                 <span>Start Learning</span>
               </a>
             </div>

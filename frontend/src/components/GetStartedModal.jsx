@@ -32,7 +32,7 @@ const GetStartedModal = ({ isOpen, onClose }) => {
     >
       {/* Liquid Glass Modal Card */}
       <div
-        className={`relative w-full max-w-md bg-[#0A0D1A]/95 rounded-3xl border-2 border-purple-500/40 p-6 sm:p-8 shadow-[0_25px_65px_rgba(0,0,0,0.95),inset_0_2px_20px_rgba(168,85,247,0.3)] backdrop-blur-2xl transition-all duration-400 transform ${
+        className={`relative w-full max-w-md bg-[#0A0D1A]/95 rounded-3xl border-2 border-cyan-500/40 p-6 sm:p-8 shadow-[0_25px_65px_rgba(0,0,0,0.95),inset_0_2px_20px_rgba(0,216,255,0.3)] backdrop-blur-2xl transition-all duration-400 transform ${
           isAnimatingOut ? 'scale-90 translate-y-8 opacity-0' : 'scale-100 translate-y-0 opacity-100'
         }`}
       >
@@ -48,8 +48,8 @@ const GetStartedModal = ({ isOpen, onClose }) => {
         {isSubmitted ? (
           /* Success State */
           <div className="py-8 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in zoom-in duration-300">
-            <div className="w-16 h-16 rounded-full bg-purple-600/30 border-2 border-purple-400 flex items-center justify-center text-purple-300 shadow-[0_0_30px_#a855f7]">
-              <CheckCircle2 className="w-10 h-10 text-purple-400" />
+            <div className="w-16 h-16 rounded-full bg-cyan-600/30 border-2 border-cyan-400 flex items-center justify-center text-cyan-300 shadow-[0_0_30px_#00d8ff]">
+              <CheckCircle2 className="w-10 h-10 text-cyan-400" />
             </div>
             <h3 className="text-2xl font-bold text-white">Welcome Aboard!</h3>
             <p className="text-sm text-slate-300">
@@ -60,12 +60,12 @@ const GetStartedModal = ({ isOpen, onClose }) => {
           /* Registration Form */
           <div className="space-y-6">
             <div>
-              <div className="inline-flex items-center space-x-2 bg-purple-950/60 border border-purple-500/40 px-3 py-1 rounded-full text-xs font-mono text-purple-300 mb-3">
+              <div className="inline-flex items-center space-x-2 bg-blue-950/60 border border-cyan-500/40 px-3 py-1 rounded-full text-xs font-mono text-cyan-300 mb-3">
                 <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
                 <span>START YOUR JOURNEY</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                Get Started with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">AI VARTEX</span>
+                Get Started with <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">AI VARTEX</span>
               </h2>
               <p className="text-slate-300 text-sm mt-1.5 leading-relaxed">
                 Join our next-generation AI platform to access courses, interactive labs, and voice AI assistants.
@@ -86,7 +86,7 @@ const GetStartedModal = ({ isOpen, onClose }) => {
                     placeholder="Enter your name"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="w-full bg-black/60 border border-white/15 focus:border-purple-400 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-purple-400/50 transition-all"
+                    className="w-full bg-black/60 border border-white/15 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 transition-all"
                   />
                 </div>
               </div>
@@ -104,7 +104,7 @@ const GetStartedModal = ({ isOpen, onClose }) => {
                     placeholder="name@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-black/60 border border-white/15 focus:border-purple-400 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-purple-400/50 transition-all"
+                    className="w-full bg-black/60 border border-white/15 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 transition-all"
                   />
                 </div>
               </div>
@@ -112,7 +112,7 @@ const GetStartedModal = ({ isOpen, onClose }) => {
               {/* Submit CTA */}
               <button
                 type="submit"
-                className="w-full flex items-center justify-center py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-xl shadow-purple-600/40 hover:shadow-purple-500/60 transition-all duration-200 mt-2 border border-purple-400/40"
+                className="w-full flex items-center justify-center py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-500 shadow-xl shadow-cyan-500/40 hover:shadow-cyan-400/60 transition-all duration-200 mt-2 border border-cyan-400/40"
               >
                 <span>Register & Continue</span>
                 <ArrowRight className="w-4 h-4 ml-2" />

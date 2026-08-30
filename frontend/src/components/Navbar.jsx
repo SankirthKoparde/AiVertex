@@ -45,7 +45,7 @@ const Navbar = ({ showGetStarted = true, onOpenGetStarted }) => {
           isVisible ? 'translate-y-0' : '-translate-y-full'
         } ${
           isScrolled
-            ? 'bg-[#05070E]/90 backdrop-blur-2xl border-b border-purple-500/20 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
+            ? 'bg-[#05070E]/90 backdrop-blur-2xl border-b border-cyan-500/20 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
             : 'bg-gradient-to-b from-[#05070E]/95 via-[#05070E]/50 to-transparent backdrop-blur-md py-4.5 border-b border-white/5'
         }`}
       >
@@ -69,7 +69,7 @@ const Navbar = ({ showGetStarted = true, onOpenGetStarted }) => {
                   className="relative py-1 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 group"
                 >
                   <span>{item}</span>
-                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-500 rounded-full transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-cyan-400 rounded-full transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </nav>
@@ -87,7 +87,7 @@ const Navbar = ({ showGetStarted = true, onOpenGetStarted }) => {
               {showGetStarted && (
                 <button
                   onClick={onOpenGetStarted}
-                  className="group relative inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white transition-all duration-300 ease-in-out rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-md shadow-purple-600/30 hover:shadow-purple-500/50 hover:scale-[1.02] active:scale-[0.98] border border-purple-400/40 animate-in fade-in zoom-in-95 duration-500"
+                  className="group relative inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white transition-all duration-300 ease-in-out rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-500 shadow-md shadow-cyan-500/30 hover:shadow-cyan-400/50 hover:scale-[1.02] active:scale-[0.98] border border-cyan-400/40 animate-in fade-in zoom-in-95 duration-500"
                 >
                   <span>Get Started</span>
                   <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -110,14 +110,14 @@ const Navbar = ({ showGetStarted = true, onOpenGetStarted }) => {
 
         {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden w-full bg-[#05070E]/98 backdrop-blur-2xl border-t border-b border-purple-500/20 px-6 pt-4 pb-6 space-y-4 shadow-2xl animate-in fade-in slide-in-from-top-3 duration-200 mt-3">
+          <div className="md:hidden w-full bg-[#05070E]/98 backdrop-blur-2xl border-t border-b border-cyan-500/20 px-6 pt-4 pb-6 space-y-4 shadow-2xl animate-in fade-in slide-in-from-top-3 duration-200 mt-3">
             <div className="flex flex-col space-y-2">
               {['Home', 'Courses', 'Learning', 'Projects', 'About'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-2.5 text-base font-medium text-slate-200 hover:text-white hover:bg-purple-600/20 rounded-xl transition-colors"
+                  className="px-4 py-2.5 text-base font-medium text-slate-200 hover:text-white hover:bg-cyan-500/20 rounded-xl transition-colors"
                 >
                   {item}
                 </a>
@@ -138,7 +138,7 @@ const Navbar = ({ showGetStarted = true, onOpenGetStarted }) => {
                     setMobileMenuOpen(false);
                     if (onOpenGetStarted) onOpenGetStarted();
                   }}
-                  className="w-full flex items-center justify-center py-3 text-white font-semibold text-base rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-md shadow-purple-600/30 animate-in fade-in duration-300"
+                  className="w-full flex items-center justify-center py-3 text-white font-semibold text-base rounded-xl bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-500 shadow-md shadow-cyan-500/30 animate-in fade-in duration-300"
                 >
                   <span>Get Started</span>
                   <ArrowRight className="w-4 h-4 ml-2" />
